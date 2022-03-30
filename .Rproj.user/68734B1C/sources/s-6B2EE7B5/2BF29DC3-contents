@@ -1,0 +1,65 @@
+
+
+# Welcome to the False Map Turtle Zebra Mussel Consumption analysis!
+
+# First things first, load in your packages
+library(tidyverse)
+library(janitor)
+library(brms)
+library(tidybayes)
+
+
+# As with the IMI chemical cue detection experiment, this data was also created using
+# a sepearate Excel sheet in the same Excel workbook for each turtle. So, we will need
+# to save the data using the VBA interface of Excel.
+
+# Instructions for saving data .xlsx file into multiple .csv files:
+
+# 1. Press Alt + F11 keys simultaneously to open the Microsoft Visual Basic Application window.
+# 
+# 2. In the Microsoft Visual Basic Application window, click Insert > Module. Then copy and paste the following code into the Module window.
+# 
+# VBA code: Export all sheets to separated csv files:
+#   
+#   Sub ExportSheetsToCSV()
+# Dim xWs As Worksheet
+# Dim xcsvFile As String
+# For Each xWs In Application.ActiveWorkbook.Worksheets
+# xWs.Copy
+# xcsvFile = CurDir & "\" & xWs.Name & ".csv"
+#         Application.ActiveWorkbook.SaveAs Filename: = xcsvFile, _
+#         FileFormat: = xlCSV, CreateBackup: = False
+#         Application.ActiveWorkbook.Saved = True
+#         Application.ActiveWorkbook.Close
+#     Next
+# End Sub
+
+
+# Now that all of the Excel sheets are saved into individual .csv files, they are slightly
+# (only slightly) easier to work with in R!
+
+
+# Read in multiple .csv files
+fmtzm_files <- list.files(path = "~/GitHub/FMT_ZM_Consumption/data/ind_data", pattern = "*.csv", full.names = T)
+fmtzm_tbl <- sapply(fmtzm_files, read_csv, simplify=FALSE) %>% 
+  bind_rows(.id = "id")
+
+View(fmtzm_tbl)
+
+
+# Removing a bunch of unecessary columns that I thought were necessary when setting up
+# the Excel book but turned out to be a hassle and correlate to a few lines of code in R
+fmtzm_tbl$Video_File_Name <- NULL
+fmtzm_tbl$Comments <- NULL
+fmtzm_tbl$X6 <- NULL
+fmtzm_tbl$Start_Time_Proper_Format <- NULL
+fmtzm_tbl$Stop_Time_Proper_Format <- NULL
+fmtzm_tbl$Total_Behavior_Time <- NULL
+fmtzm_tbl$Video <- NULL
+fmtzm_tbl$Proportion_Time <- NULL
+fmtzm_tbl$Total_Time_Seconds <- NULL
+fmtzm_tbl$Total_Time <- NULL
+
+View(fmtzm_tbl)
+
+

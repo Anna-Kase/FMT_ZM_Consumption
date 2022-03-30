@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1648675632171.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2404960730",
+    "id" : "1314A55D",
+    "lastKnownWriteTime" : 1645736117,
+    "last_content_update" : 1645736117,
+    "path" : "~/GitHub/FMT_ZM_Consumption/code/fmt_zm_model.R",
+    "project_path" : "code/fmt_zm_model.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

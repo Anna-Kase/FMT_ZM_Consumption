@@ -1,0 +1,4 @@
+Behavior,Start_Time_Entry,Start_Time_Proper_Format,Stop_Time_Entry,Stop_Time_Proper_Format,Total_Behavior_Time,Comments,Video
+Breath,00:00,00:00,05:00,00:05,00:05,,MOV00000
+Claw_Head_Down,05:00,00:05,13:00,00:13,00:08,,
+Claw_Head_Up,13:00,00:13,55:00,00:55,00:42,,

@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1648677256604.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B7B3BD2C",
+    "lastKnownWriteTime" : 7791925794919773281,
+    "last_content_update" : 1648677256604,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "580767AA",
+        "caption" : "fmtzm_tbl",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=fmtzm_tbl&cache_key=580767AA",
+        "displayedObservations" : "5985",
+        "environment" : "",
+        "expression" : "fmtzm_tbl",
+        "object" : "fmtzm_tbl",
+        "preview" : "0",
+        "totalObservations" : "5985",
+        "variables" : "4"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1648675638893.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3316518295",
+    "id" : "6A145401",
+    "lastKnownWriteTime" : 1614118912,
+    "last_content_update" : 1614118912,
+    "path" : "~/GitHub/FMT_ZM_Consumption/code/Poster_Stats.R",
+    "project_path" : "code/Poster_Stats.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
